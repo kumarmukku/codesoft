@@ -1,0 +1,136 @@
+html, body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+  html p, body p {
+    color: #696969; }
+
+header {
+  background-color: white;
+  box-shadow: 0px 4px 10px -5px grey;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 20px; }
+  header #title-area h1 {
+    margin: 0;
+    font-size: 80px; }
+    header #title-area h1 span {
+      font-size: 20px;
+      vertical-align: text-top; }
+  header #nav-area {
+    margin: auto 0 auto auto;
+    font-weight: 600;
+    font-family: sans-serif; }
+    header #nav-area ul {
+      margin: 0; }
+      header #nav-area ul li {
+        margin-right: 10px;
+        list-style-type: none;
+        display: inline-block; }
+        header #nav-area ul li button {
+          padding: 5px;
+          border-radius: 5px;
+          color: white;
+          background-color: #9999ff;
+          border: none;
+          font-weight: 700;
+          transition: .2s ease; }
+          header #nav-area ul li button:hover {
+            cursor: pointer;
+            background-color: darkblue; }
+        header #nav-area ul li a {
+          text-decoration: none;
+          color: #9999ff; }
+
+#banner-area {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  #banner-area #banner-image-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #banner-area #banner-image-area img {
+      width: 500px; }
+    #banner-area #banner-image-area form {
+      font-family: sans-serif;
+      background-color: #ececec;
+      padding: 30px;
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px; }
+      #banner-area #banner-image-area form input {
+        width: 400px;
+        height: 20px;
+        margin-bottom: 16px; }
+      #banner-area #banner-image-area form input:nth-child(6) {
+        border: none;
+        background-color: orange;
+        border-radius: 10px;
+        width: 100px;
+        color: white;
+        font-weight: 600;
+        font-family: sans-serif; }
+        #banner-area #banner-image-area form input:nth-child(6):hover {
+          cursor: pointer; }
+    #banner-area #banner-image-area #social-network-links {
+      font-size: 30px;
+      justify-content: left; }
+      #banner-area #banner-image-area #social-network-links a {
+        color: #696969; }
+        #banner-area #banner-image-area #social-network-links a:hover {
+          color: grey; }
+  #banner-area #get-prera-button button {
+    background-color: #9999ff;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    transition: .3s ease; }
+    #banner-area #get-prera-button button:hover {
+      cursor: pointer;
+      background-color: darkblue; }
+
+.description-area {
+  padding: 20px;
+  text-align: center;
+  background-color: #f3f3f3; }
+  .description-area h2 {
+    font-size: 40px;
+    font-weight: 500; }
+  .description-area #description-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around; }
+    .description-area #description-images div i {
+      font-size: 50px;
+      color: #b5b5f3; }
+    .description-area #description-images div p {
+      font-size: 20px; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: center; }
+  footer p {
+    margin-right: 20px; }
+
+@media only screen and (max-width: 510px) {
+  header {
+    flex-direction: column; }
+  #banner-area #banner-image-area img {
+    width: 300px; }
+  #banner-area #banner-image-area form {
+    width: 250px;
+    margin-top: 0; }
+    #banner-area #banner-image-area form input {
+      width: 100%; } }

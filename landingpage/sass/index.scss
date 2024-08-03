@@ -1,0 +1,186 @@
+$paragraphColors: #696969;
+$descriptionBackground: #f3f3f3;
+
+html, body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    p {
+        color: $paragraphColors;
+    }
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 4px 10px -5px grey;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 20px;
+
+    #title-area {
+        h1 {
+            margin: 0;
+            font-size: 80px;
+            span {
+                font-size: 20px;
+                vertical-align: text-top;
+            } 
+        }
+    }
+    #nav-area {
+        margin: auto 0 auto auto;
+        font-weight: 600;
+        font-family: sans-serif;
+        ul {
+            margin: 0;
+            li {
+                margin-right: 10px;
+                list-style-type: none;
+                display: inline-block;
+                button {
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: white;
+                    background-color: #9999ff;
+                    border: none;
+                    font-weight: 700;
+                    transition: .2s ease;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: darkblue;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: #9999ff;
+                }
+            }
+        }
+    }
+}
+
+#banner-area {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    #banner-image-area {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        img {
+            width: 500px;
+        }
+        form {
+            font-family: sans-serif;
+            background-color: #ececec;
+            padding: 30px;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            input {
+                width: 400px;
+                height: 20px;
+                margin-bottom: 16px;
+            }
+            input:nth-child(6) {
+                border: none;
+                background-color: orange;
+                border-radius: 10px;
+                width: 100px;
+                color: white;
+                font-weight: 600;
+                font-family: sans-serif;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        #social-network-links {
+            font-size: 30px;
+            justify-content: left;
+            a {
+                color: $paragraphColors;
+                &:hover {
+                    color: grey;
+                }
+            }
+        }
+    }
+    #get-prera-button {
+        button {
+            background-color: #9999ff;
+            border-radius: 15px;
+            color: white;
+            border: none;
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+            transition: .3s ease;
+            &:hover {
+                cursor: pointer;
+                background-color: darkblue;
+            }
+        }
+    }
+}
+
+.description-area {
+    padding: 20px;
+    text-align: center;
+    background-color: $descriptionBackground;
+    h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    #description-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        div {
+            i {
+                font-size: 50px;
+                color: #b5b5f3;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: center;
+    p {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    header {
+        flex-direction: column;
+    }
+    #banner-area {
+        #banner-image-area {
+            img {
+                width: 300px;
+            }
+            form {
+                width: 250px;
+                margin-top: 0;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
